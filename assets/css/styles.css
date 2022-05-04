@@ -3,5 +3,76 @@
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+#navbar-main{
+    width: 100%;
+    background-color: rgb(0, 15, 65);
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+}
+
+#navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo{
+    float: left;
+    flex: 1;
+
+}
+.nav-logo h1 a{
+    font-size: 45;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+.nav-about li{
+    display: inline;
+    margin: 20px;
+}
+
+.nav-about li a{
+    color: #ffff;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+}
+
+.nav-about li a{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-about li a:hover{
+    color: green;
+}
+
+.nav-buttons{
+    float: right;
+}
+
+.nav-buttons a{
+    text-decoration: none;
+    list-style: none;
+    color: brown;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.nav-buttons .btn-nav{
+    margin: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffff;
+    border: none;
 }
