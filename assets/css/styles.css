@@ -12,6 +12,14 @@ nav{
     width: 70%;
     margin: auto;
 }
+
+nav > .logo a{
+    list-style: none;
+    text-decoration: none;
+    font-size: x-large;
+    color: orange;
+
+}
 nav > .nav-links > ul > li{
     display: inline-block;
     margin-right: 10px;
@@ -33,6 +41,7 @@ nav > .nav-links > ul > li > button{
     border: none;
     border-radius: 3px;
     height: 35px;
+    width: 100%;
 }
 
 nav > .nav-links > ul > li > .btn-1{
