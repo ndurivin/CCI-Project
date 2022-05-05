@@ -1,78 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,300;1,600&family=Poppins:wght@100;200;300;400&family=Source+Code+Pro&family=Water+Brush&display=swap');
 *{
-    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-#navbar-main{
+.main-container{
     width: 100%;
-    background-color: rgb(0, 15, 65);
-    height: 60px;
-    position: fixed;
-    z-index: 2;
 }
 
-#navbar{
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    margin: 20px;
+}
+
+nav{
+    display: flex;
+    height: 15vh;
+
+}
+
+.nav-links{
+    display: inline-block;
+}
+
+.nav-items{
+    display: inline-block;
+    margin: 20px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.nav-btns{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-primary{
+    background-color: rgb(0, 0, 26);
+    color: #ffff;
+    margin: 10px;
+}
+
+.btn-secondary{
+    background-color: rgb(238, 156, 4);
+    height: 50px;
+    width: 180px;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.content-area{
     width: 80%;
     margin: auto;
-    display: flex;
-    align-items: center;
 }
 
-.nav-logo{
-    float: left;
-    flex: 1;
-
+.hero-section{
+    background-image: url(/assets/images/banner.png);
+    height: 650px;
 }
-.nav-logo h1 a{
-    font-size: 45;
+
+.hero-section-content{
+    padding: 200px 300px;
+}
+
+.hero-section-content h3{
     color: #fff;
-    text-decoration: none;
-    
+
+}
+.hero-section-content p{
+    margin: 0 20px;
+    font-size: 40px;
+}
+
+.hero-text{
+    color: rgb(238, 156, 4);
+    font-family: 'Water Brush', cursive;
+}
+
+.footer{
+    height: 100px;
+    background-color: #0000;
+}
+
+.footer{
+    height: 150px;
+    background-color: black;
+    display: block;
+
 }
 
 
-.nav-about li{
-    display: inline;
-    margin: 20px;
+.social-media{
+    color: #fff;
 }
 
-.nav-about li a{
+
+.footer .copyright p{
     color: #ffff;
-    text-decoration: none;
-    list-style: none;
-    font-weight: 700;
-}
-
-.nav-about li a{
-    color: #fff;
-    text-decoration: none;
-    list-style: none;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.nav-about li a:hover{
-    color: green;
-}
-
-.nav-buttons{
-    float: right;
-}
-
-.nav-buttons a{
-    text-decoration: none;
-    list-style: none;
-    color: brown;
-    font-size: 16px;
-    margin: 20px;
-}
-
-.nav-buttons .btn-nav{
-    margin: 10px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #ffff;
-    border: none;
+    
 }
